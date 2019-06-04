@@ -1,4 +1,8 @@
-import $ from 'jquery'
-import './index.css';
+import {printInnerPath} from './inner';
 
-$('#main').text('Hello, webpack!');
+function printEntryPath() {
+  console.log('[entry.ts]', __dirname);
+}
+
+printEntryPath();
+printInnerPath();
